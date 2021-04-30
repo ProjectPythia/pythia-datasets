@@ -7,5 +7,3 @@ dependencies:
   - pooch
   - pre-commit
   - pytest-cov
-  - rich
-  - typer

@@ -31,6 +31,7 @@ setup(
     long_description_content_type='text/markdown',
     long_description=long_description,
     include_package_data=True,
+    package_data={'pythia_datasets': ['registry.txt']},
     keywords='Pythia, Pooch',
     name='pythia-datasets',
     packages=find_packages(include=['pythia_datasets', 'pythia_datasets.*']),
