@@ -1,0 +1,11 @@
+name: pythia-datasets
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - pip
+  - pooch
+  - pre-commit
+  - pytest-cov
+  - rich
+  - typer
