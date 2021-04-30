@@ -3,7 +3,7 @@
 """Top-level module for pythia-datasets ."""
 from pkg_resources import DistributionNotFound, get_distribution
 
-from .datasets import DATASETS
+from .datasets import DATASETS, locate
 
 try:
     __version__ = get_distribution(__name__).version
