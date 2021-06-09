@@ -24,6 +24,41 @@ To add a new dataset file, please follow these steps:
 2. From the command line, run `python make_registry.py` script to update the registry file residing in `pythia_datasets/registry.txt`
 3. Commit and push your changes to GitHub
 
+### Using datasets in notebooks and/or scripts
+
+- Ensure the `pythia_datasets` package is installed in your environment
+
+  ```bash
+  python -m pip install pythia-datasets
+
+  # or
+
+  python -m pip install git+https://github.com/ProjectPythia/pythia-datasets
+  ```
+
+- Import `DATASETS` and inspect the registry to find out which datasets are available
+
+  ```python
+  In [1]: from pythia_datasets import DATASETS
+
+  In [2]: DATASETS.registry_files
+  Out[2]: ['jan-17-co-asos.txt.xz', 'NARR_19930313_0000.nc']
+  ```
+
+- To fetch a data file of interest, use the `.fetch` method and provide the filename of the data file. This will
+
+  - download and cache the file if it doesn't exist already.
+  - retrieve and return the local path
+
+  ```python
+    In [4]: filepath = DATASETS.fetch('jan-17-co-asos.txt.xz')
+
+    In [5]: filepath
+    Out[5]: '/Users/abanihi/Library/Caches/pythia-datasets/jan-17-co-asos.txt.xz'
+  ```
+
+```
+
 [github-ci-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/CI?label=CI&logo=github&style=for-the-badge
 [github-lint-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/linting?label=linting&logo=github&style=for-the-badge
 [github-ci-link]: https://github.com/ProjectPythia/pythia-datasets/actions?query=workflow%3ACI
@@ -38,3 +73,4 @@ To add a new dataset file, please follow these steps:
 [conda-link]: https://anaconda.org/conda-forge/pythia-datasets
 [license-badge]: https://img.shields.io/github/license/ProjectPythia/pythia-datasets?style=for-the-badge
 [repo-link]: https://github.com/ProjectPythia/pythia-datasets
+```
