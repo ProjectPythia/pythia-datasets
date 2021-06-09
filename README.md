@@ -51,10 +51,16 @@ To add a new dataset file, please follow these steps:
   - retrieve and return the local path
 
   ```python
-    In [4]: filepath = DATASETS.fetch('jan-17-co-asos.txt.xz')
+  In [4]: filepath = DATASETS.fetch('jan-17-co-asos.txt.xz')
 
-    In [5]: filepath
-    Out[5]: '/Users/abanihi/Library/Caches/pythia-datasets/jan-17-co-asos.txt.xz'
+  In [5]: filepath
+  Out[5]: '/Users/abanihi/Library/Caches/pythia-datasets/jan-17-co-asos.txt.xz'
+  ```
+
+- Once you have access to the local filepath, you can then use it to load your dataset into pandas or xarray or your package of choice:
+
+  ```python
+  In [6]: df = pd.read_csv(filepath)
   ```
 
 [github-ci-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/CI?label=CI&logo=github&style=for-the-badge
@@ -71,7 +77,3 @@ To add a new dataset file, please follow these steps:
 [conda-link]: https://anaconda.org/conda-forge/pythia-datasets
 [license-badge]: https://img.shields.io/github/license/ProjectPythia/pythia-datasets?style=for-the-badge
 [repo-link]: https://github.com/ProjectPythia/pythia-datasets
-
-```
-
-```
