@@ -1,10 +1,10 @@
-# pythia-datasets
-
 | CI          | [![GitHub Workflow Status][github-ci-badge]][github-ci-link] [![GitHub Workflow Status][github-lint-badge]][github-lint-link] [![Code Coverage Status][codecov-badge]][codecov-link] |
 | :---------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Docs**    |                                                                    [![Documentation Status][rtd-badge]][rtd-link]                                                                    |
 | **Package** |                                                         [![Conda][conda-badge]][conda-link] [![PyPI][pypi-badge]][pypi-link]                                                         |
 | **License** |                                                                        [![License][license-badge]][repo-link]                                                                        |
+
+# pythia-datasets
 
 Data repository for Project Pythia examples/notebooks
 
@@ -16,7 +16,7 @@ These files are used as sample data in Pythia Project examples/notebooks and are
 - `enso_data.csv`
 - `jan-17-co-asos.txt.xz`
 
-### Adding new datasets
+## Adding new datasets
 
 To add a new dataset file, please follow these steps:
 
@@ -24,7 +24,7 @@ To add a new dataset file, please follow these steps:
 2. From the command line, run `python make_registry.py` script to update the registry file residing in `pythia_datasets/registry.txt`
 3. Commit and push your changes to GitHub
 
-### Using datasets in notebooks and/or scripts
+## Using datasets in notebooks and/or scripts
 
 - Ensure the `pythia_datasets` package is installed in your environment
 
@@ -57,8 +57,6 @@ To add a new dataset file, please follow these steps:
     Out[5]: '/Users/abanihi/Library/Caches/pythia-datasets/jan-17-co-asos.txt.xz'
   ```
 
-```
-
 [github-ci-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/CI?label=CI&logo=github&style=for-the-badge
 [github-lint-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/linting?label=linting&logo=github&style=for-the-badge
 [github-ci-link]: https://github.com/ProjectPythia/pythia-datasets/actions?query=workflow%3ACI
@@ -73,4 +71,7 @@ To add a new dataset file, please follow these steps:
 [conda-link]: https://anaconda.org/conda-forge/pythia-datasets
 [license-badge]: https://img.shields.io/github/license/ProjectPythia/pythia-datasets?style=for-the-badge
 [repo-link]: https://github.com/ProjectPythia/pythia-datasets
+
+```
+
 ```
