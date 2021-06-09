@@ -8,6 +8,22 @@
 
 Data repository for Project Pythia examples/notebooks
 
+## Sample data sets
+
+These files are used as sample data in Pythia Project examples/notebooks and are downloaded by `pythia_datasets` package:
+
+- `NARR_19930313_0000.nc`
+- `enso_data.csv`
+- `jan-17-co-asos.txt.xz`
+
+### Adding new datasets
+
+To add a new dataset file, please follow these steps:
+
+1. Add the dataset file to the `data/` directory
+2. From the command line, run `python make_registry.py` script to update the registry file residing in `pythia_datasets/registry.txt`
+3. Commit and push your changes to GitHub
+
 [github-ci-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/CI?label=CI&logo=github&style=for-the-badge
 [github-lint-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/linting?label=linting&logo=github&style=for-the-badge
 [github-ci-link]: https://github.com/ProjectPythia/pythia-datasets/actions?query=workflow%3ACI
