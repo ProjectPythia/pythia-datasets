@@ -15,6 +15,8 @@ These files are used as sample data in Pythia Project examples/notebooks and are
 - `NARR_19930313_0000.nc`
 - `enso_data.csv`
 - `jan-17-co-asos.txt.xz`
+- `cesm2_sst_data.nc`
+- `cesm2_grid_variables.nc`
 
 ## Adding new datasets
 
