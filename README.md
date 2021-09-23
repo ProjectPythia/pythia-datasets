@@ -65,6 +65,19 @@ To add a new dataset file, please follow these steps:
   In [6]: df = pd.read_csv(filepath)
   ```
 
+## Changing the default data cache location
+
+The default cache location (where the data are saved on your local system) is dependent on the operating system. You can use the `locate()` method to identify it:
+
+```python
+from pythia_datasets import locate
+locate()
+```
+
+The location can be overwritten by the `PYTHIA_DATASETS_DIR` environment
+variable to the desired destination.  
+
+
 [github-ci-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/CI?label=CI&logo=github&style=for-the-badge
 [github-lint-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/linting?label=linting&logo=github&style=for-the-badge
 [github-ci-link]: https://github.com/ProjectPythia/pythia-datasets/actions?query=workflow%3ACI
