@@ -75,8 +75,7 @@ locate()
 ```
 
 The location can be overwritten by the `PYTHIA_DATASETS_DIR` environment
-variable to the desired destination.  
-
+variable to the desired destination.
 
 [github-ci-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/CI?label=CI&logo=github&style=for-the-badge
 [github-lint-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/linting?label=linting&logo=github&style=for-the-badge
