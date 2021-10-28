@@ -17,6 +17,7 @@ These files are used as sample data in Pythia Project examples/notebooks and are
 - `jan-17-co-asos.txt.xz`
 - `CESM2_sst_data.nc`
 - `CESM2_grid_variables.nc`
+- `daymet_v4_precip_sept_2013.nc`
 
 ## Adding new datasets
 
