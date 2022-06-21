@@ -1,4 +1,4 @@
-| CI          | [![GitHub Workflow Status][github-ci-badge]][github-ci-link] [![GitHub Workflow Status][github-lint-badge]][github-lint-link] [![Code Coverage Status][codecov-badge]][codecov-link] |
+| CI          | [![GitHub Workflow Status][github-ci-badge]][github-ci-link] [![GitHub Workflow Status][pre-commit-badge]][github-lint-link] [![Code Coverage Status][codecov-badge]][codecov-link] |
 | :---------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Docs**    |                                                                    [![Documentation Status][rtd-badge]][rtd-link]                                                                    |
 | **Package** |                                                         [![Conda][conda-badge]][conda-link] [![PyPI][pypi-badge]][pypi-link]                                                         |
@@ -79,7 +79,7 @@ The location can be overwritten by the `PYTHIA_DATASETS_DIR` environment
 variable to the desired destination.
 
 [github-ci-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/CI?label=CI&logo=github&style=for-the-badge
-[github-lint-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/linting?label=linting&logo=github&style=for-the-badge
+[pre-commit-badge]: https://results.pre-commit.ci/badge/github/ProjectPythia/pythia-datasets/main.svg
 [github-ci-link]: https://github.com/ProjectPythia/pythia-datasets/actions?query=workflow%3ACI
 [github-lint-link]: https://github.com/ProjectPythia/pythia-datasets/actions?query=workflow%3Alinting
 [codecov-badge]: https://img.shields.io/codecov/c/github/ProjectPythia/pythia-datasets.svg?logo=codecov&style=for-the-badge
