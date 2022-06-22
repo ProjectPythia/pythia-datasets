@@ -82,7 +82,7 @@ variable to the desired destination.
 [pre-commit-badge]: https://results.pre-commit.ci/badge/github/ProjectPythia/pythia-datasets/main.svg
 [github-ci-link]: https://github.com/ProjectPythia/pythia-datasets/actions?query=workflow%3ACI
 [pre-commit-link]: https://results.pre-commit.ci/latest/github/ProjectPythia/pythia-datasets/main
-[codecov-badge]: https://img.shields.io/codecov/c/github/ProjectPythia/pythia-datasets.svg?logo=codecov&style=for-the-badge
+[codecov-badge]: https://img.shields.io/codecov/c/github/ProjectPythia/pythia-datasets.svg?logo=codecov
 [codecov-link]: https://codecov.io/gh/ProjectPythia/pythia-datasets
 [rtd-badge]: https://img.shields.io/readthedocs/pythia-datasets/latest.svg?style=for-the-badge
 [rtd-link]: https://pythia-datasets.readthedocs.io/en/latest/?badge=latest
