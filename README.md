@@ -78,7 +78,7 @@ locate()
 The location can be overwritten by the `PYTHIA_DATASETS_DIR` environment
 variable to the desired destination.
 
-[github-ci-badge]: https://img.shields.io/github/workflow/status/ProjectPythia/pythia-datasets/CI?label=CI&logo=github
+[github-ci-badge]: https://github.com/ProjectPythia/pythia-datasets/actions/workflows/ci.yaml/badge.svg
 [pre-commit-badge]: https://results.pre-commit.ci/badge/github/ProjectPythia/pythia-datasets/main.svg
 [github-ci-link]: https://github.com/ProjectPythia/pythia-datasets/actions?query=workflow%3ACI
 [pre-commit-link]: https://results.pre-commit.ci/latest/github/ProjectPythia/pythia-datasets/main
