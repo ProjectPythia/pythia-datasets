@@ -39,7 +39,7 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v2
         with:
           channels: conda-forge
-          mamba-version: '*'
+          miniforge-variant: Mambaforge
           activate-environment: pythia-datasets
           auto-update-conda: false
           python-version: ${{ matrix.python-version }}
