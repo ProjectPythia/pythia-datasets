@@ -21,7 +21,7 @@ These files are used as sample data in [Pythia Foundations](https://foundations.
 
 ## Adding new datasets
 
-The scope of this data collection is to serve examples for [Pythia Foundations](https://foundations.projectpythia.org). 
+The scope of this data collection is to serve examples for [Pythia Foundations](https://foundations.projectpythia.org).
 If you are adding new content to Foundations that requires a new dataset file, please follow these steps:
 
 1. Add the dataset file to the `data/` directory
