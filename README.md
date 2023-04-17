@@ -6,11 +6,11 @@
 
 # pythia-datasets
 
-Data repository for Project Pythia examples/notebooks
+Data repository for with sample data for the [Pythia Foundations](https://foundations.projectpythia.org) book.
 
 ## Sample data sets
 
-These files are used as sample data in Pythia Project examples/notebooks and are downloaded by `pythia_datasets` package:
+These files are used as sample data in [Pythia Foundations](https://foundations.projectpythia.org) and are downloaded by `pythia_datasets` package:
 
 - `NARR_19930313_0000.nc`
 - `enso_data.csv`
@@ -21,7 +21,8 @@ These files are used as sample data in Pythia Project examples/notebooks and are
 
 ## Adding new datasets
 
-To add a new dataset file, please follow these steps:
+The scope of this data collection is to serve examples for [Pythia Foundations](https://foundations.projectpythia.org). 
+If you are adding new content to Foundations that requires a new dataset file, please follow these steps:
 
 1. Add the dataset file to the `data/` directory
 2. From the command line, run `python make_registry.py` script to update the registry file residing in `pythia_datasets/registry.txt`
