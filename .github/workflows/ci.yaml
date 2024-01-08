@@ -13,8 +13,8 @@ jobs:
       - id: skip_check
         uses: fkirc/skip-duplicate-actions@master
         with:
-          concurrent_skipping: 'same_content'
-          skip_after_successful_duplicate: 'false'
+          concurrent_skipping: "same_content"
+          skip_after_successful_duplicate: "false"
           do_not_skip: '["pull_request", "workflow_dispatch", "schedule"]'
           paths_ignore: '["**/docs/**"]'
 
@@ -29,7 +29,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.7', '3.8', '3.9']
+        python-version: ["3.7", "3.8", "3.9"]
     steps:
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.12.0
