@@ -4,6 +4,10 @@ on:
   pull_request:
   workflow_dispatch: # allows you to trigger manually
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   pre-job:
     runs-on: ubuntu-latest
@@ -29,17 +33,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.7', '3.8', '3.9']
+        python-version: ['3.9', '3.10', '3.11', '3.12']
     steps:
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.1
-        with:
-          access_token: ${{ github.token }}
       - uses: actions/checkout@v4
       - uses: conda-incubator/setup-miniconda@v3
         with:
           channels: conda-forge
-          miniforge-variant: Mambaforge
           activate-environment: pythia-datasets
           auto-update-conda: false
           python-version: ${{ matrix.python-version }}
