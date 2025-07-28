@@ -38,9 +38,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: conda-incubator/setup-miniconda@v3
         with:
-          channels: conda-forge
           activate-environment: pythia-datasets
-          auto-update-conda: false
           python-version: ${{ matrix.python-version }}
           environment-file: ci/environment.yml
 
