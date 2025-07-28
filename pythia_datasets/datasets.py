@@ -1,4 +1,5 @@
 from importlib.resources import files
+
 import pooch
 
 DATASETS = pooch.create(
@@ -10,6 +11,7 @@ DATASETS = pooch.create(
 ref = files('pythia_datasets').joinpath('registry.txt')
 with ref.open('rb') as registry_file:
     DATASETS.load_registry(registry_file)
+
 
 def locate():
     """The absolute path to the sample data storage location on disk.
