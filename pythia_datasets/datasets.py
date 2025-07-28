@@ -7,7 +7,7 @@ DATASETS = pooch.create(
     env='PYTHIA_DATASETS_DIR',
 )
 
-ref = files('pythia_datasets'.joinpath('registry.txt')
+ref = files('pythia_datasets').joinpath('registry.txt')
 with ref.open('rb') as registry_file:
     DATASETS.load_registry(registry_file)
 
