@@ -1,4 +1,5 @@
-import pkg_resources
+from importlib.resources import files
+
 import pooch
 
 DATASETS = pooch.create(
@@ -7,7 +8,8 @@ DATASETS = pooch.create(
     env='PYTHIA_DATASETS_DIR',
 )
 
-with pkg_resources.resource_stream('pythia_datasets', 'registry.txt') as registry_file:
+ref = files('pythia_datasets').joinpath('registry.txt')
+with ref.open('rb') as registry_file:
     DATASETS.load_registry(registry_file)
 
 
