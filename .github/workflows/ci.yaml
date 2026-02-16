@@ -35,7 +35,7 @@ jobs:
       matrix:
         python-version: ['3.9', '3.10', '3.11', '3.12', '3.13']
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: conda-incubator/setup-miniconda@v3
         with:
           activate-environment: pythia-datasets
@@ -52,7 +52,7 @@ jobs:
           python -m pytest --cov=./ --cov-report=xml --verbose
 
       - name: Upload code coverage to Codecov
-        uses: codecov/codecov-action@v5.4.3
+        uses: codecov/codecov-action@v5.5.2
         with:
           files: ./coverage.xml
           flags: unittests
