@@ -1,3 +1,51 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pythia-datasets"
+dynamic = ["version"]
+description = "Provides utility functions for accessing data repository for Project Pythia examples/notebooks"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.9"
+maintainers = [
+    { name = "Project Pythia Team", email = "" },
+]
+keywords = [
+    "Pooch",
+    "Pythia",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "pooch",
+]
+
+[project.urls]
+Documentation = "https://github.com/ProjectPythia/pythia-datasets"
+Homepage = "https://github.com/ProjectPythia/pythia-datasets"
+Source = "https://github.com/ProjectPythia/pythia-datasets"
+Tracker = "https://github.com/ProjectPythia/pythia-datasets/issues"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "pythia_datasets/_version.py"
+
 [tool.black]
 line-length = 100
 target-version = ['py39']
