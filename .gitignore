@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 .vscode/
 temp_registry.txt
+pythia_datasets/_version.py
