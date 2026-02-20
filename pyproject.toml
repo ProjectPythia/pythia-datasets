@@ -46,6 +46,9 @@ source = "vcs"
 [tool.hatch.build.hooks.vcs]
 version-file = "pythia_datasets/_version.py"
 
+[tool.hatch.build.targets.sdist]
+exclude = ["data/"]
+
 [tool.black]
 line-length = 100
 target-version = ['py39']
